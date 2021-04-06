@@ -1,1 +1,17 @@
-header.header HEADER
+header.header
+  .container
+    .header__content
+      a.header__logo(href="/")
+        picture.logo
+          source(srcset="images/logo-mobile.png", media="(max-width: 768px)")
+          img.logo(src="images/logo.png", alt="Logo")
+      nav.nav.js-open-nav
+        ul.nav__list
+          li.nav__item 
+            a.nav__link(href="#") Наши возможности
+          li.nav__item 
+            a.nav__link(href="#") Что вы получаете 
+          li.nav__item 
+            a.nav__link(href="#") Партнеры
+      .header__burger.js-burger
+        span.header__burger-item
