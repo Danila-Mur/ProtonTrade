@@ -3,4 +3,6 @@ import './index.pug';
 
 import './intro';
 
+import './features'
+
 export default () => {};
