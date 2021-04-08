@@ -1,6 +1,6 @@
 .intro
   padding-top: 180px
-  padding-bottom: 183px
+  padding-bottom: 140px
   background-image: url('./main-bg.png')
   background-repeat: no-repeat
   background-size: contain
@@ -12,7 +12,11 @@
 
   +max-w($mobile-lg)
     padding-top: 191px
+    padding-bottom: 100px
     background-position: top -54px right -183px
+
+  +max-w($mobile-sm)
+    padding-bottom: 60px
 
   +max-w($mobile-sm)
     padding-top: 72px
@@ -107,7 +111,7 @@
 .intro__button-img
   margin-left: 11px
 
-.button__description
+.button-description
   display: flex
   margin-left: 37px
 
@@ -118,11 +122,11 @@
     margin-left: 12px;
     margin-top: -3px;
 
-.button__description-img
+.button-description__img
   margin-right: 7px
   margin-left: -15px
 
-.button__description-text
+.button-description__text
   font-size: 16px
 
 .intro__cards
