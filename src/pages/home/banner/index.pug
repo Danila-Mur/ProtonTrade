@@ -1,7 +1,11 @@
 section.banner
   .container
     span.banner__subtitle.subtitle.subtitle--white Робот-помощник
-    h1.banner__title.main-title.main-title--white Proton Trade
+    h2.banner__title.main-title.main-title--white Proton Trade
     a.banner__button.button.button--white(href="#")  Попробовать
       img.banner__button-img(src="images/arrow-right.svg", alt="Arrow right")
-  img.banner-bg(src="images/banner-phone.png", alt="")
+  picture.banner-bg
+    source(media="(max-width: 767px)", srcset="images/banner-phone-mobile-sm.png")
+    source(media="(max-width: 1035px)", srcset="images/banner-phone-mobile-lg.png")
+    source(media="(max-width: 1200px)", srcset="images/banner-phone-laptop.png")
+    img(src="images/banner-phone.png", alt="Banner phone")

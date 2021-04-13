@@ -1,26 +1,76 @@
 .banner
-  padding-top: 92px
-  padding-bottom: 104px
+  position: relative
+  padding-top: 87px
+  padding-bottom: 89px
   background-color: #4867ff
   background-image: url('./banner-bg.svg')
   background-repeat: no-repeat
   background-position: top right
 
-.subtitle--white
+  +max-w($laptop)
+    padding-top: 61px
+    padding-bottom: 60px
+
+  +max-w($laptop-md)
+    padding-top: 43px
+    padding-bottom: 43px
+
+  +max-w($mobile-md)
+    padding-top: 76px
+    padding-bottom: 72px
+
+.banner__subtitle
+  margin-bottom: 2px
   font-size: 28px
+
+  +max-w($laptop-md)
+    font-size: 24px
+
+  +max-w($mobile-sm)
+    margin-bottom: 6px
+    font-size: 18px
+
+.subtitle--white
   color: $color-button
 
 .main-title--white
   color: $color-button
 
 .banner__title
-  margin-bottom: 10px
+  margin-bottom: 19px
+
+  +max-w($laptop-md)
+    font-size: 60px
+    line-height: 71px
+    letter-spacing: 0.03em
+    margin-bottom: 25px
+
+  +max-w($mobile-md)
+    margin-bottom: 11px
 
 .button--white
   display: inline-block
+  padding: 15px 47px
   border: 2px solid #fff
   border-radius: 4px
   color: $color-button
 
 .banner__button-img
+  margin-left: 9px
   vertical-align: middle
+
+.banner-bg
+  position: absolute
+  right: 156px
+  bottom: -66px
+
+  +max-w($laptop)
+    right: 77px
+    bottom: -46px
+
+  +max-w($laptop-md)
+    right: 12px
+    bottom: -37px
+
+  +max-w(767)
+    top: -44px
