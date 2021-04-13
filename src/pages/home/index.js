@@ -5,4 +5,6 @@ import './intro';
 import './opportunities';
 import './banner';
 
+import './features'
+
 export default () => {};
