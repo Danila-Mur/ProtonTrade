@@ -1,10 +1,59 @@
 .features
-  padding-top: 95px
+  padding-top: 100px
   padding-bottom: 200px
+  background-color: #fff
+
+  +max-w($laptop)
+    padding-top: 151px
 
 .features__title
-  margin-bottom: 36px
   font-family: $font-family-second
   font-size: 42px
   line-height: 1.2
   font-weight: $font-weight-bold
+
+  +max-w($laptop-md)
+    margin-bottom: 34px
+
+.features__row
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-top: -36px
+  margin-bottom: 88px
+  padding-right: 63px
+
+  &:last-child
+    margin-top: 0
+    margin-bottom: 0
+
+
+  +max-w($laptop)
+    padding-right: 0
+
+  +max-w($laptop-md)
+    flex-direction: column-reverse
+    align-items: start
+    margin-top: 0
+    
+    &:nth-child(3)    
+      flex-direction: column
+
+.features__row-header
+  max-width: 504px
+
+  +max-w($laptop-md)
+    max-width: 600px
+
+.features__subtitle
+  color: #343A40
+  font-size: 24px
+  font-weight: $font-weight-semi-bold
+  line-height: 1.55
+
+.features__text
+  color: #343A40
+  font-size: 16px
+
+.features__row-img
+  margin-bottom: 25px
