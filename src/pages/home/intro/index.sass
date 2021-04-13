@@ -34,13 +34,7 @@
 
 
 .intro__subtitle
-  display: block
   margin-bottom: 10px
-  font-family: $font-family-second
-  font-weight: $font-weight-light
-  font-size: 22px
-  line-height: 1.2
-  letter-spacing: 0.02em
 
   +max-w($mobile-sm)
     font-size: 18px
@@ -48,11 +42,6 @@
 
 .intro__title
   margin-bottom: 5px
-  font-family: $font-family-second
-  font-size: 74px
-  line-height: 1.2
-  font-weight: $font-weight-bold
-  letter-spacing: 0.03em
 
   +max-w($mobile-sm)
     font-size: 58px
@@ -91,20 +80,17 @@
     align-items: start
     margin-bottom: 120px
 
+.button--blue
+  background-color: $color-hover 
+  color: $color-button
+
+  &:hover
+    background-color: #1631B6
+
 .intro__button
   display: flex
   align-items: center
   justify-content: center
-  padding: 19px 49px
-  border-radius: 4px
-  background-color: $color-hover 
-  color: $color-button
-  text-decoration: none
-  font-size: 16px
-  font-weight: $font-weight-semi-bold
-
-  &:hover
-    background-color: #1631B6
 
   +max-w($mobile-lg)
     width: 100%
