@@ -1,10 +1,19 @@
 .features
   padding-top: 100px
-  padding-bottom: 200px
+  padding-bottom: 148px
   background-color: #fff
 
   +max-w($laptop)
     padding-top: 151px
+    padding-bottom: 185px
+
+  +max-w($laptop-md)
+    padding-top: 115px
+    padding-bottom: 165px
+
+  +max-w($mobile-sm)
+    padding-top: 35px
+    padding-bottom: 120px
 
 .features__title
   font-family: $font-family-second
@@ -14,6 +23,9 @@
 
   +max-w($laptop-md)
     margin-bottom: 34px
+
+  +max-w($mobile-sm)
+    font-size: 40px
 
 .features__row
   display: flex
@@ -29,6 +41,7 @@
 
 
   +max-w($laptop)
+    margin-bottom: 48px
     padding-right: 0
 
   +max-w($laptop-md)
@@ -57,3 +70,6 @@
 
 .features__row-img
   margin-bottom: 25px
+
+  +max-w($mobile-md)
+    margin-bottom: 62px
