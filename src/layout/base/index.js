@@ -1,2 +1,2 @@
 import './base.sass';
-import './typografy.sass';
+import "./typography.sass";
