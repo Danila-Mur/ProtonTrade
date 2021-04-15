@@ -3,8 +3,8 @@ import './index.pug';
 
 import './intro';
 import './opportunities';
-import './banner';
-
 import './features'
+import './banner';
+import './contact-us';
 
 export default () => {};

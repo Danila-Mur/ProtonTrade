@@ -1,0 +1,166 @@
+.contact-us
+  padding-top: 200px
+  padding-bottom: 200px
+  background-color: #fbfbfb
+
+.contact-us__content
+  display: grid
+  grid-template-columns: 376px 1fr
+  column-gap: 24px
+
+  +max-w($laptop)
+    grid-template-columns: 272px 1fr
+    column-gap: 56px
+
+  +max-w($laptop-md)
+    grid-template-columns: 1fr
+    row-gap: 24px
+
+.contact-us__title
+  margin-bottom: 16px
+  font-family: $font-family-second
+  font-size: 42px
+  font-weight: $font-weight-bold
+  line-height: 1.2
+
+.contact-us__description
+  font-size: 16px
+
+.contact-us__form
+  display: grid
+  grid-template-columns: 376px 376px
+  gap: 24px 24px
+
+  +max-w($laptop)
+    // grid-template-columns: 340px 340px
+    grid-template-columns: 1fr 1fr
+
+  +max-w($mobile-sm)
+    grid-template-columns: 1fr
+    row-gap: 16px
+
+.form__item
+  position: relative
+
+  &:nth-child(3)
+    grid-column: 1 / 3
+
+  +max-w($mobile-sm)
+    grid-column: 1 / 3
+
+.form__label
+  position: absolute
+  top: 16px
+  left: 24px
+  color: #808080
+  font-size: 16px
+  transition: top 0.5s, font-size 0.5s
+
+.form__input
+  width: 100%
+  padding: 20px 24px
+  border: 1px solid #e3e5e6
+  border-radius: 4px
+  background: #edeeef
+  font-size: 16px
+
+  &:focus
+    outline: none
+    
+    + .form__label
+      top: 5px
+      font-size: 10px
+  
+  &:not(:placeholder-shown)
+    + .form__label
+      top: 5px
+      font-size: 10px
+
+.form__textarea
+  width: 100%
+  padding: 20px 0px 125px 24px
+  border: 1px solid #e3e5e6
+  border-radius: 4px
+  background: #edeeef
+  font-size: 16px
+
+  &:focus
+    outline: none
+    
+    + .form__label
+      top: 5px
+      font-size: 10px
+  
+  &:not(:placeholder-shown)
+    + .form__label
+      top: 5px
+      font-size: 10px
+
+.form__textarea-counter
+  position: absolute
+  bottom: 21px
+  right: 28px
+  font-size: 16px
+  color: #b8b8b8
+
+.form__description
+  gap: 0
+  grid-column: 1 / 3
+  margin-top: -25px
+  color: #808080
+  font-size: 16px
+
+  +max-w($laptop)
+    font-size: 14px
+
+  +max-w($mobile-sm)
+    margin-top: -15px
+
+.form__button
+  max-width: 276px
+  border: none
+  outline: none
+
+  +max-w($laptop-md)
+    grid-column: 1 / 3
+    max-width: unset
+
+.contact-us__success
+  display: none
+  justify-content: center
+  flex-direction: column
+  align-items: center
+
+.success__img
+  margin-bottom: 40px
+
+.success__title
+  margin-bottom: 40px
+  font-family: $font-family-second
+  font-size: 42px
+  font-weight: $font-weight-bold
+  line-height: 1.2
+
+  +max-w($laptop)
+    font-size: 24px
+    font-weight: $font-weight-semi-bold
+    line-height: 1.55
+    text-align: center
+
+  +max-w($mobile-md)
+    font-size: 40px
+    font-weight: $font-weight-bold
+    line-height: 1.2
+
+.success__button
+  padding: 18px 86px
+  border: none
+
+  +max-w($mobile-sm)
+    width: 100%
+
+.contact-us__success--visible
+  display: flex
+
+.contact-us__form--hide
+  display: none

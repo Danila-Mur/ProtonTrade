@@ -1,0 +1,23 @@
+section.contact-us
+  .container
+    .contact-us__content
+      .contact-us__header
+        h2.contact-us__title Для связи с нами
+        span.contact-us__description Можете задать нам любой вопрос про бота
+      form.contact-us__form
+        .form__item
+          input(type="text", name="name", placeholder=' ').form__input
+          .form__label Имя
+        .form__item
+          input(type="email", name="email", placeholder=' ').form__input
+          label.form__label Email
+        .form__item
+          textarea(name="message", maxlength="500", placeholder=' ').form__textarea
+          label.form__label Сообщение
+          span.form__textarea-counter <span class="textarea__counter-min">0</span> / 500
+        p.form__description Нажимая на кнопку «Отправить вопрос», вы даете согласие на обработку персональных данных.
+        button.form__button.button.button--blue(type="submit") Отправить вопрос
+    .contact-us__success
+      img.success__img(src="images/success.svg", alt="Success")
+      h2.success__title Ваше сообщение успешно отправлено
+      button.success__button.button.button--blue.js-success(type='button') OK 
