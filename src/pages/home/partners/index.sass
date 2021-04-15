@@ -67,19 +67,24 @@
   margin-right: 36px
   margin-bottom: 14px
 
+
+  &:nth-child(odd)
+    
+    +max-w($laptop-md)
+      margin-right: 35px
+
+  &:nth-child(even)
+  
+    +max-w($laptop-md)
+      margin-right: 0   
+  
+  &:nth-child(odd)
+    
+    +max-w(767)
+      margin-right: 0
+  
   +max-w($laptop)
     margin-right: 30px
 
-  +max-w($laptop-md)
-    
-    &:nth-child(odd)
-      margin-right: 35px
-
-    &:nth-child(even)
-      margin-right: 0   
-  
   +max-w(767)
     margin-bottom: 49px
-
-    &:nth-child(odd)
-      margin-right: 0
