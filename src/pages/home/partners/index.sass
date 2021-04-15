@@ -1,0 +1,90 @@
+.partners
+  padding-top: 157px
+  padding-bottom: 100px
+  background: #fff
+
+  +max-w($laptop)
+    padding-top: 137px
+
+  +max-w($laptop-md)
+    padding-top: 116px
+
+  +max-w($mobile-md)
+    padding-top: 61px
+    padding-bottom: 60px
+
+.partners__content
+  display: grid
+  grid-template-columns: 300px 1fr
+  column-gap: 100px
+
+  +max-w($laptop)
+    column-gap: 35px
+
+  +max-w($laptop-md)
+    grid-template-columns: 232px 1fr
+    column-gap: 24px
+
+  +max-w($mobile-md)
+    grid-template-columns: 1fr
+    align-items: center
+    row-gap: 32px
+
+.partners__title
+  margin-bottom: 16px
+  font-family: $font-family-second
+  font-size: 42px
+  font-weight: $font-weight-bold
+  line-height: 1.2
+
+  +max-w($mobile-md)
+    font-size: 40px
+
+.partners__description
+  font-size: 16px
+
+.partners__inner
+  display: flex
+  align-items: flex-end
+  justify-content: flex-end
+  flex-wrap: wrap
+
+  +max-w($laptop)
+    justify-content: flex-start
+
+  +max-w($laptop-md)
+    align-items: center
+
+  +max-w(767)
+    flex-direction: column
+    align-items: center
+
+  +max-w($mobile-md)
+    align-items: flex-start
+
+
+.partners__img
+  margin-right: 36px
+  margin-bottom: 14px
+
+
+  &:nth-child(odd)
+    
+    +max-w($laptop-md)
+      margin-right: 35px
+
+  &:nth-child(even)
+  
+    +max-w($laptop-md)
+      margin-right: 0   
+  
+  &:nth-child(odd)
+    
+    +max-w(767)
+      margin-right: 0
+  
+  +max-w($laptop)
+    margin-right: 30px
+
+  +max-w(767)
+    margin-bottom: 49px
