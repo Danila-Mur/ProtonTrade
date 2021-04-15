@@ -6,5 +6,6 @@ import './opportunities';
 import './banner';
 
 import './features'
+import './partners'
 
 export default () => {};
