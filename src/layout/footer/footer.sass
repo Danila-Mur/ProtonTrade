@@ -1,4 +1,46 @@
 .footer
-  flex-grow: 0
-  flex-shrink: 0
-  flex-basis: auto
+  padding: 32px 0
+  background: #122791
+  color: $color-button
+
+.footer__body
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  +max-w($laptop-md)
+    align-items: start
+
+  +max-w($mobile-md)
+    flex-direction: column
+
+  +max-w($mobile-sm)
+    max-width: 245px
+
+.footer__content
+  display: flex
+  justify-content: space-between
+  flex-basis: 68%
+
+  +max-w($laptop-md)
+    flex-direction: column
+
+.footer__link
+  color: $color-button
+  font-size: 16px
+  text-decoration: none
+
+  &:last-child
+    
+    +max-w($laptop-md)
+      margin-bottom: 0
+
+  +max-w($laptop-md)
+    margin-bottom: 20px
+
+.footer__copyright
+  font-size: 16px
+
+  +max-w($mobile-md)
+    margin-bottom: 20px
+
