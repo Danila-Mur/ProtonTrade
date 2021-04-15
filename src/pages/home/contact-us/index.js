@@ -24,3 +24,8 @@ $(".js-success").on("click", function() {
   $(".contact-us__success").removeClass("contact-us__success--visible");
   $(".contact-us__content").removeClass("contact-us__form--hide");
 });
+
+$(".js-button-up").on("click", function() {
+  $("html, body").animate({ scrollTop: 0 }, 600);
+  return false;
+});
