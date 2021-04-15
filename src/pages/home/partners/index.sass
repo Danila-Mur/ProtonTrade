@@ -73,16 +73,19 @@
     +max-w($laptop-md)
       margin-right: 35px
 
+    +max-w(767)
+      margin-right: 0
+
   &:nth-child(even)
   
     +max-w($laptop-md)
       margin-right: 0   
-  
-  &:nth-child(odd)
+
+  &:last-child
     
     +max-w(767)
-      margin-right: 0
-  
+      margin-bottom: 0
+
   +max-w($laptop)
     margin-right: 30px
 
