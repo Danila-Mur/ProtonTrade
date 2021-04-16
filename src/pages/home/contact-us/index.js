@@ -7,7 +7,7 @@ $(".form__textarea").on("keyup", function() {
 $(".contact-us__form").on("submit", function(event) {
   event.preventDefault();
   $.ajax({
-    url: "http://httpbin.org/post",
+    url: "https://httpbin.org/post",
     method: "post",
     dataType: "json",
     data: $(this).serialize(),
