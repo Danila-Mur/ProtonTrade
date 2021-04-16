@@ -13,16 +13,10 @@ $(".contact-us__form").on("submit", function(event) {
     data: $(this).serialize(),
     success: function(data) {
       console.log(data);
-      $(".contact-us__success").addClass("contact-us__success--visible");
-      $(".contact-us__content").addClass("contact-us__form--hide");
+      $(".success-send").fadeIn(2000);
+      $(".contact-us__content").fadeOut(300);
     }
   });
-});
-
-$(".js-success").on("click", function() {
-  $(".contact-us__form").trigger("reset");
-  $(".contact-us__success").removeClass("contact-us__success--visible");
-  $(".contact-us__content").removeClass("contact-us__form--hide");
 });
 
 $(".js-button-up").on("click", function() {

@@ -7,5 +7,6 @@ import "./features";
 import "./banner";
 import "./partners";
 import "./contact-us";
+import "./success-send";
 
 export default () => {};
