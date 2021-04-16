@@ -1,4 +1,5 @@
 import "./index.sass";
+console.log('Hello World!!');
 
 $(".form__textarea").on("keyup", function() {
   $(".textarea__counter-min").text(this.value.replace(/{.*}/g, "").length);
