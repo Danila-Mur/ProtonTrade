@@ -7,6 +7,4 @@ import "./footer";
 import "./container";
 import "./navigation";
 
-export default () => {
-  console.log("init layout");
-};
+export default () => {};

@@ -1,11 +1,15 @@
 import "./index.sass";
-console.log('Hello World!!');
 
-$(".form__textarea").on("keyup", function() {
-  $(".textarea__counter-min").text(this.value.replace(/{.*}/g, "").length);
+const $form = $(".contact-us__form");
+const $formTextarea = $(".form__textarea");
+const $textareaCounter = $(".textarea__counter-min");
+const $buttonUp = $(".js-button-up");
+
+$formTextarea.on("keyup", function() {
+  $textareaCounter.text(this.value.replace(/{.*}/g, "").length);
 });
 
-$(".contact-us__form").on("submit", function(event) {
+$form.on("submit", function(event) {
   event.preventDefault();
   $.ajax({
     url: "https://httpbin.org/post",
@@ -14,13 +18,22 @@ $(".contact-us__form").on("submit", function(event) {
     data: $(this).serialize(),
     success: function(data) {
       console.log(data);
-      $(".success-send").fadeIn(2000);
-      $(".contact-us__content").fadeOut(300);
+      $(".success-send").addClass("success-send--visible");
+      $(".contact-us__content").addClass("contact-us__content--hide");
     }
   });
 });
+$(function() {
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      $buttonUp.show();
+    } else {
+      $buttonUp.hide();
+    }
+  });
 
-$(".js-button-up").on("click", function() {
-  $("html, body").animate({ scrollTop: 0 }, 600);
-  return false;
+  $buttonUp.on("click", function() {
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+  });
 });

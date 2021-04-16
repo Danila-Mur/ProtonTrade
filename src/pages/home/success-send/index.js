@@ -1,7 +1,9 @@
 import "./index.sass";
 
-$(".js-success").on("click", function() {
-  $(".success-send").fadeOut(300);
+const $successButton = $(".js-success");
+
+$successButton.on("click", function() {
   $(".contact-us__form").trigger("reset");
-  $(".contact-us__content").fadeIn(2000);
+  $(".success-send").removeClass("success-send--visible");
+  $(".contact-us__content").removeClass("contact-us__content--hide");
 });
