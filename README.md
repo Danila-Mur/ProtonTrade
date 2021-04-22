@@ -1,4 +1,4 @@
-# FRONTEND BOILERPLATE
+# Proton Trade
 
 ## Install
 
