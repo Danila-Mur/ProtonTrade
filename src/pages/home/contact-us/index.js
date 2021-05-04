@@ -23,8 +23,9 @@ $form.on("submit", function(event) {
     }
   });
 });
+
 $(function() {
-  $(window).scroll(function() {
+  $(window).on('scroll', function() {
     if ($(window).scrollTop() > 300) {
       $buttonUp.show();
     } else {
