@@ -3,9 +3,9 @@ header.header
     .header__content
       a.header__logo(href="/")
         picture.logo
-          source(srcset="images/logo-mobile-sm.svg", media="(max-width: 425px)")
-          source(srcset="images/logo-mobile-lg.svg", media="(max-width: 768px)")
-          img(src="images/logo.png", alt="Logo")
+          source(srcset="${require('images/logo-mobile-sm.svg')}", media="(max-width: 425px)")
+          source(srcset="${require('images/logo-mobile-lg.svg')}", media="(max-width: 768px)")
+          img(srcset="${require('images/logo.png')}", alt="Logo")
       nav.nav.js-open-nav
         ul.nav__list
           li.nav__item 

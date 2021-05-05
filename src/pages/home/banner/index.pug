@@ -5,7 +5,7 @@ section.banner
     a.banner__button.button.button--white(href="#")  Попробовать
       img.banner__button-img.button--img(src="images/arrow-right.svg", alt="Arrow right")
   picture.banner__bg
-    source(media="(max-width: 767px)", srcset="images/banner-phone-mobile-sm.png")
-    source(media="(max-width: 1035px)", srcset="images/banner-phone-mobile-lg.png")
-    source(media="(max-width: 1200px)", srcset="images/banner-phone-laptop.png")
-    img(src="images/banner-phone-2.png", alt="Banner phone")
+    source(media="(max-width: 767px)", srcset="${require('images/banner-phone-mobile-sm.png')}")
+    source(media="(max-width: 1035px)", srcset="${require('images/banner-phone-mobile-lg.png')}")
+    source(media="(max-width: 1200px)", srcset="${require('images/banner-phone-laptop.png')}")
+    img(srcset="${require('images/banner-phone.png')}", alt="Banner phone")

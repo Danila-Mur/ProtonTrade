@@ -1,7 +1,5 @@
-import initHome from './home';
-import initExample from './example'; // need remove;
+import initHome from "./home";
 
 export default () => {
   initHome();
-  initExample();
 };

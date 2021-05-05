@@ -1,16 +1,15 @@
 section#features.features
   .container
-    h2.features__title Что вы получаете
-      //- .features__rows
+    h2.features__title.title Что вы получаете
     .features__row
       .features__row-header
         span.features__subtitle Увеличится % положительных сделок
         p.features__text 
           | При следовании рекомендациям робота-помощника все 
           | ваши сделки будут по тренду, что увеличит % положительных сделок.
-      img.features__row-img(src="images/positive-transactions.png", alt="Positive transactions")
+      img.features__row-img(srcset="${require('images/positive-transactions.png')}", alt="Positive transactions")
     .features__row
-      img.features__row-img(src="images/risk.png", alt="Risk")
+      img.features__row-img(srcset="${require('images/risk.png')}", alt="Risk")
       .features__row-header
         span.features__subtitle Понятный риск-менеджмент
         p.features__text 
@@ -23,4 +22,4 @@ section#features.features
         p.features__text 
           | За счет автоматического поиска уровней, вы сможете 
           | сократить число не системных сделок совершая сделки от ценовых уровней.
-      img.features__row-img(src="images/losing-trades.png", alt="Losing trades")
+      img.features__row-img(srcset="${require('images/losing-trades.png')}", alt="Losing trades")

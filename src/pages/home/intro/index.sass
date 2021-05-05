@@ -1,5 +1,3 @@
-@import './button-description'
-  
 .intro
   padding-top: 180px
   padding-bottom: 70px
@@ -93,7 +91,23 @@
 .intro__button-img
   margin-left: 11px
 
+.intro__using
+  display: flex
+  margin-left: 37px
 
+  +max-w($mobile-lg)
+    margin-left: 0
+
+  +max-w($mobile-sm)
+    margin-left: 12px;
+    margin-top: -3px;
+
+.intro__using__img
+  margin-right: 7px
+  margin-left: -15px
+
+.intro__using__text
+  font-size: 16px
 
 .intro__cards
   display: grid
